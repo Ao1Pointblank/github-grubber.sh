@@ -8,7 +8,7 @@
 #define usage function
 show_help() {
     echo "Command to download latest files from Github repos"
-    echo "Usage: $(basename $0) -o [REPO_OWNER] -r [REPO_NAME] -u [regular github link instead of separate owner & repo]-f [file name to search for]"
+    echo "Usage: $(basename $0) -o [REPO_OWNER] -r [REPO_NAME] -u [regular github link instead of separate owner & repo] -f [file name to search for] -d [preexisting output folder]"
     echo "    -f selects the first match with grep. if -f is not specified, it will display a fzf window to select manually."
     echo "Examples:"
     echo "    $(basename $0) -o th-ch -r youtube-music -f amd64.deb"
