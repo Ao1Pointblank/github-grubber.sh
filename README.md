@@ -6,17 +6,23 @@ fzf, curl, wget
 
 # Options:  
 - first you need to provide the source:   
-**``-u [github url]``**  
+**``-u | --url [github url]``**  
   
 - alternatively, you can use -o and -r:   
-**``-o [repo owner]``**    
-**``-r [repo name]``**    
+**``-o | --owner [repo owner]``**    
+**``-r | --repo [repo name]``**    
   
-- specifying the release file/format type is not required, but will make the download process automatable:  
-**``-f [file type/keyword]``** 
+- specifying the release file/format type is not required, but will make the download process automatable. it should be as specific as possible:   
+**``-f | --file [file type/keyword]``** 
   
 - download directory is ``$pwd`` (current working directory) by default, but can be changed to move the output to a preexisting folder:  
-**``-d [directory]``**    
+**``-d | --dir | --directory [directory]``**
+  
+- force download of files even if the name has been cached before in the history file:
+**``-F | --force``**  
+  
+- display help  
+**``-h | --help``**
 
 # Examples:  
 ask which version to download to ``~/Downloads``:  
